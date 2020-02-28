@@ -27,6 +27,5 @@ Bad commit message. please follow Below of one defined pattern followed by space
 [feature] 
 [fix] 
 [refactor] 
-[wip] 
-`
+[wip]
 ```
