@@ -20,7 +20,7 @@ It will creates one folder `.githooks` on root. And we can simply copy our hooks
 Now when we commit the message which not followed any of defined starting pattern it will throw an erro like this.
 
 ```
-Bad commit message. please follow Below of one defined pattern followed by space: 
+Bad commit message. please start your msg from defined below patterns followed by one space
 [init] 
 [config] 
 [doc] 
