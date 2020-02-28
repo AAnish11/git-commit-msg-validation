@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-error_msg="Bad commit message. please follow Below of one defined pattern followed by space: 
+error_msg="Bad commit message. please start your msg from defined below patterns followed by one space
 [init] 
 [config] 
 [doc] 
