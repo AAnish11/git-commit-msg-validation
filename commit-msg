@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+error_msg="Bad commit message. please follow Below of one defined pattern followed by space: 
+[init] 
+[config] 
+[doc] 
+[feature] 
+[fix] 
+[refactor] 
+[wip] 
+"
+
+# Check commit messages contains standard message validation only or not
+git_msg=$1
+msg=`head -n1 $git_msg`
+# msg="[init] commiting my message"
+pattern="^(\[?((init|config|doc|feature|fix|refactor|wip)))?\][[:space:]]+"
+
+if ! [[ "$msg" =~ $pattern ]]; then
+  echo "$error_msg"
+  exit 1
+fi
